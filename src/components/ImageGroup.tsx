@@ -12,11 +12,11 @@ export default function ImageGroup({ group, onImageClick }: ImageGroupProps) {
   return (
     <div className="mb-12">
       {/* Group Header */}
-      <div className="sticky top-0 z-10 bg-gray-50 py-4 mb-6 border-b border-gray-200 -mx-4 px-4">
-        <h2 className="text-2xl font-bold text-gray-800">
+      <div className="sticky top-0 z-10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-4 mb-6 border-b border-border -mx-4 px-4">
+        <h2 className="text-2xl font-bold text-foreground">
           {group.monthName} {group.year}
         </h2>
-        <p className="text-gray-600">
+        <p className="text-muted-foreground">
           {group.images.length} image{group.images.length !== 1 ? "s" : ""}
         </p>
       </div>
