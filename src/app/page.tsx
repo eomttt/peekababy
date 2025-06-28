@@ -3,11 +3,8 @@
 import { useState, useMemo } from "react";
 import { sampleImages } from "../data/sampleImages";
 import { ImageMetadata, SearchFilters } from "../types/image";
-import {
-  groupImagesByYearMonth,
-  filterImages,
-  getAllTags,
-} from "../utils/imageUtils";
+import { groupImagesByYearMonth, filterImages } from "../utils/imageUtils";
+
 import SearchBar from "../components/SearchBar";
 import ImageGroup from "../components/ImageGroup";
 import ImageDetail from "../components/ImageDetail";
@@ -21,9 +18,6 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState<ImageMetadata | null>(
     null
   );
-
-  // Get all available tags for the search component
-  const allTags = useMemo(() => getAllTags(sampleImages), []);
 
   // Filter images based on search criteria
   const filteredImages = useMemo(() => {
