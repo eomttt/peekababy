@@ -1,0 +1,14 @@
+This directory is for storing actual image files.
+
+For now, the application uses placeholder icons to represent images.
+To use real images:
+
+1. Place your image files in this directory
+2. Update the sampleImages.ts file with the correct paths
+3. Replace the placeholder divs in ImageThumbnail and ImageDetail components with actual <img> tags
+
+Example image paths:
+- /images/vacation-2024-01.jpg
+- /images/family-2024-02.jpg
+- /images/spring-2024-03.jpg
+etc. 
